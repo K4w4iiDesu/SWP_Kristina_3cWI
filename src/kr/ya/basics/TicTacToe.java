@@ -10,7 +10,7 @@ public class TicTacToe {
 
         for (int row = 0; row < 3; row++) {
             for (int col = 0; col < 3; col++) {
-                if(SpielFeld[row][col] == Null) {
+                if (SpielFeld[row][col] == Null) {
                     SpielFeld[row][col] = '-';
                 }
                 System.out.print(" |" + SpielFeld[row][col] + "| ");
