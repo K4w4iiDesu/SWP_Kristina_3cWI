@@ -46,3 +46,7 @@ public class Camera {
         System.out.println("---new SDCard, with " + this.sdCard.capacity + " GB, is inside---");
     }
 }
+
+
+
+
