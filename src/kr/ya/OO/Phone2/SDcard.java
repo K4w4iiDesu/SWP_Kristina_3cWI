@@ -14,7 +14,11 @@ public class SDcard {
     }
 
     public void addFile(PhoneFile file){
-        this.files.add(file);
+        if (getFreeSpace()>=file.getSize()) {
+            this.files.add(file);
+        } else {
+            System.out.println("Not enough storage");
+        }
     }
 
     public List<PhoneFile> getAllFiles(){
